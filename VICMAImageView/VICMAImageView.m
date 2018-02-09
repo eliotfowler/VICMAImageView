@@ -60,6 +60,12 @@
     return self;
 }
 
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    [self updateView];
+}
+
 - (CGSize)presentationImageSize
 {
     return self.imageView.bounds.size;
